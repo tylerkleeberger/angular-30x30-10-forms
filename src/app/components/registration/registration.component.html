@@ -1,0 +1,14 @@
+<!-- REGISTRATION LIST -->
+<h2>Current Registration List</h2>
+
+<!-- display list -->
+<ul class="contacts">
+    <li *ngFor="let registrant of registrants">
+        <a routerLink="/details/{{registrant.id}}">
+            <span class="badge">{{registrant.id}}</span>{{registrant.name}}
+        </a>
+        <!-- delete button -->
+        <button type="button" class="delete" title="delete contact" 
+        (click)="delete(registrant)"><mat-icon color="warn" style="vertical-align: middle;">delete_forever</mat-icon></button>
+    </li>
+</ul>

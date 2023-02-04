@@ -1,0 +1,47 @@
+<!-- add item -->
+
+<div class="course-details">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <span>
+            Add a Registrant
+          </span>
+        </mat-card-title>
+      </mat-card-header>
+      <form #form="ngForm" (submit)="add()">
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="Name"
+              [(ngModel)]="registrant.name"
+              name="name"
+              required
+              type="text">
+          </mat-form-field>
+          <mat-form-field class="full-width">
+            <textarea
+              matInput
+              placeholder="Location"
+              [(ngModel)]="registrant.location"
+              name="location"
+              type="text"></textarea>
+          </mat-form-field>
+          <mat-form-field class="full-width">
+            <textarea
+              matInput
+              placeholder="Preferred Contact Method"
+              [(ngModel)]="registrant.contact"
+              name="contact"
+              type="text"></textarea>
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          <button type="submit" [disabled]="form.invalid" mat-button color="primary">Save</button>
+          <button type="button" mat-button (click)="goBack()">Cancel</button>
+        </mat-card-actions>
+      </form>
+      <hr>
+    </mat-card>
+  </div>

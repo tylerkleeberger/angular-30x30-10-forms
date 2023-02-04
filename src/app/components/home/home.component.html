@@ -1,0 +1,53 @@
+<div class="courses-containers">
+    <div class="courses-list">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Event Details
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item>
+                        <h3 matLine><button 
+                            mat-icon-button 
+                            color="primary">
+                            <mat-icon>today</mat-icon></button>Date: <p matLine>October 12th, 2023</p></h3>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <h3 matLine><button 
+                            mat-icon-button 
+                            color="primary">
+                            <mat-icon>access_time</mat-icon></button>Time: <p matLine>12:00 PM</p></h3>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <h3 matLine><button 
+                            mat-icon-button 
+                            color="primary">
+                            <mat-icon>location_on</mat-icon></button>Location: <p matLine>Rural</p></h3>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="course-details">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    <span>Newest Registrants</span>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item class="contacts-menu">
+                        <a *ngFor="let registrant of registrants"
+                    routerLink="/details/{{registrant.id}}">
+                            {{registrant.name}}
+                        </a>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

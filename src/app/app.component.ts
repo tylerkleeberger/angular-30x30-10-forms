@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-30x30-10-forms';
+  title = 'Registration Page';
+  links = [
+    { path: '/home', icon: 'home', title: 'Home'},
+    { path: '/registration', icon: 'people', title: 'Registrants'},
+    { path: '/register', icon: 'receipt', title: 'Register'}
+  ]
 }

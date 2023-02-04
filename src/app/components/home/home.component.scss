@@ -1,0 +1,142 @@
+// CONTAINERS
+.full-width {
+    width: 100%;
+  }
+  
+  .courses-containers {
+    display: flex;
+    justify-content: space-around;
+  
+    .courses-list {
+      width: 49%;
+    }
+  
+    .course-details {
+      width: 49%;
+    }
+  }
+
+  mat-card {
+    height: 100%;
+  }
+  
+  mat-card-title {
+    font-size: xx-large;
+    font-weight: 200;
+    color: rgb(81, 81, 81);
+  }
+  
+
+  mat-mdc-list-item {
+    height: fit-content;
+  }
+
+  .mat-mdc-list-item:not(.mat-mdc-list-item-interactive), .mat-mdc-list-option:not(.mat-mdc-list-item-interactive) {
+    height: fit-content;
+    margin-top: 2%;
+
+    h3.matline {
+        margin-top: 2%;
+        margin-left: 2%;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    p {
+        font-size: medium;
+        font-weight: 200;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+
+    mat-icon {
+        transform: scale(1.5);
+        margin-top: 20%;
+        margin-bottom: 0%;
+    }
+  }
+
+  
+  mat-list-item:not(:first-of-type) {
+    border-top: 1px solid #efefef;
+    margin-top: 2%;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-list-item:hover {
+    cursor: default;
+    // background: whitesmoke;
+  }
+  
+  mat-list-item:not(:first-of-type) {
+    border-top: 1px solid #efefef;
+  }
+  
+  .symbol {
+    color: #777;
+  }
+  
+  mat-card-actions {
+    margin-bottom: 0;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  html, body { height: 100%; }
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  
+
+  /* DashboardComponent's private CSS styles */
+
+
+.contacts-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+  height: 100%;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  background-color: rgb(238, 255, 0);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: list-item;
+  color: gray;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+a:hover {
+  background-color: rgb(15, 17, 162);
+  color: white;
+}

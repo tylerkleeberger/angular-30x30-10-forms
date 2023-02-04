@@ -1,0 +1,22 @@
+{
+  "registrants": [
+    {
+      "id": "12",
+      "name": "One",
+      "location": "Nowhere",
+      "contact": "mobile"
+    },
+    {
+      "id": "13",
+      "name": "Two",
+      "location": "Somewhere",
+      "contact": "email"
+    },
+    {
+      "id": "14",
+      "name": "Three",
+      "location": "Lost",
+      "contact": "phone"
+    }
+  ]
+}
